@@ -12,6 +12,6 @@ public class CustomerRequest {
     private String lastName;
     private String password;
     private String phoneNumber;
-    private int age;
-    private int pin;
+    private Integer age;
+    private String pin;
 }

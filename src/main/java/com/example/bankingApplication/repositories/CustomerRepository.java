@@ -1,9 +1,11 @@
 package com.example.bankingApplication.repositories;
 
+import com.example.bankingApplication.dtos.CustomerRequest;
 import com.example.bankingApplication.model.Customer;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CustomerRepository extends MongoRepository<Customer, String> {
+    CustomerRequest findCustomerById(String id);
 }
