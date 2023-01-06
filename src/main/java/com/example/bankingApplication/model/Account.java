@@ -15,6 +15,6 @@ public class Account {
     private Long customerId;
     private double accBalance;
     private String accNumber;
-    private LocalDateTime creationDate = LocalDateTime.now();
+//    private LocalDateTime creationDate = LocalDateTime.now();
 
 }
