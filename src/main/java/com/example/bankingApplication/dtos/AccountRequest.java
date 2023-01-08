@@ -8,7 +8,7 @@ import lombok.Data;
 @Builder
 @AllArgsConstructor
 public class AccountRequest {
-//    private long customerId;
+    private long customerId;
     private double accBalance;
     private String accNumber;
 }

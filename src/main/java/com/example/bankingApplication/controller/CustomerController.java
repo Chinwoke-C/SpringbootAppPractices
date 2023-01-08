@@ -2,7 +2,7 @@ package com.example.bankingApplication.controller;
 
 import com.example.bankingApplication.dtos.CustomerRequest;
 import com.example.bankingApplication.model.Customer;
-import com.example.bankingApplication.services.CustomerService;
+import com.example.bankingApplication.services.CustomerServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("/customer")
 public class CustomerController {
     @Autowired
-    CustomerService service;
+    CustomerServiceImpl service;
 @PostMapping("/add")
     public String addNewCustomer(@RequestBody CustomerRequest request){
         service.addCustomer(request);
